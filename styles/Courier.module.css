@@ -1,0 +1,214 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.welcome {
+  margin-bottom: 2rem;
+}
+
+.welcome h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.welcome p {
+  color: #666;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.earnings {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.earnings span {
+  font-weight: 600;
+  color: #e03000;
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.activeOrdersSection, .availableOrdersSection {
+  margin-bottom: 3rem;
+}
+
+.emptyState {
+  background-color: white;
+  border-radius: 8px;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.emptyIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.emptyState h3 {
+  margin: 0 0 0.5rem;
+  color: #333;
+}
+
+.emptyState p {
+  color: #666;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.orderGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.orderCard {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.orderCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.activeOrder {
+  border-top: 4px solid #4caf50;
+}
+
+.orderHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #eee;
+}
+
+.orderHeader h3 {
+  margin: 0;
+  color: #333;
+}
+
+.statusBadge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: #ffecb3;
+  color: #ff8f00;
+}
+
+.activeOrder .statusBadge {
+  background-color: #e8f5e9;
+  color: #4caf50;
+}
+
+.orderDetails {
+  padding: 1.5rem;
+}
+
+.orderInfo p {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.orderItems {
+  margin-top: 1.5rem;
+}
+
+.orderItems h4 {
+  margin: 0 0 0.5rem;
+  color: #333;
+}
+
+.orderItems ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.orderItems li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  color: #555;
+}
+
+.orderItems li:last-child {
+  border-bottom: none;
+}
+
+.orderTotal {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed #e0e0e0;
+  font-weight: 600;
+  color: #333;
+}
+
+.orderActions {
+  padding: 1rem 1.5rem;
+  background-color: #f9f9f9;
+  border-top: 1px solid #eee;
+}
+
+.acceptButton, .completeButton {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.acceptButton {
+  background-color: #e03000;
+  color: white;
+}
+
+.acceptButton:hover {
+  background-color: #c52b00;
+}
+
+.acceptButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.completeButton {
+  background-color: #4caf50;
+  color: white;
+}
+
+.completeButton:hover {
+  background-color: #43a047;
+}
+
+.completeButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

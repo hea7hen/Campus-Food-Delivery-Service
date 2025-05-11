@@ -1,0 +1,165 @@
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.backButton {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.backButton:hover {
+  color: #e03000;
+}
+
+.orderCard {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.orderHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.orderHeader h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.statusBadge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.pending {
+  background-color: #ffecb3;
+  color: #ff8f00;
+}
+
+.accepted {
+  background-color: #e8f5e9;
+  color: #4caf50;
+}
+
+.delivered {
+  background-color: #e0e0e0;
+  color: #616161;
+}
+
+.orderInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.infoSection h2 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.infoSection p {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.itemsSection {
+  padding: 1.5rem;
+}
+
+.itemsSection h2 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.itemsList {
+  margin-bottom: 1.5rem;
+}
+
+.itemCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.itemInfo {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-right: 1rem;
+}
+
+.itemName {
+  margin: 0;
+  color: #333;
+}
+
+.itemPrice {
+  margin: 0;
+  color: #333;
+  font-weight: 500;
+}
+
+.itemQuantity {
+  margin: 0;
+  color: #666;
+  min-width: 40px;
+  text-align: right;
+}
+
+.orderSummary {
+  margin-top: 1.5rem;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 1rem;
+}
+
+.summaryItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.total {
+  font-weight: 600;
+  color: #333;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #f0f0f0;
+}

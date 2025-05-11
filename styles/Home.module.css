@@ -1,0 +1,150 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome {
+  margin-bottom: 2rem;
+}
+
+.welcome h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.welcome p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.actionCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.cardIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  margin: 0 0 0.5rem;
+  color: #333;
+}
+
+.card p {
+  color: #666;
+  margin: 0;
+}
+
+.activeOrdersSection {
+  margin-top: 3rem;
+}
+
+.activeOrdersSection h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.ordersList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.orderCard {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.orderHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #eee;
+}
+
+.orderHeader h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.statusBadge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.pending {
+  background-color: #ffecb3;
+  color: #ff8f00;
+}
+
+.accepted {
+  background-color: #e8f5e9;
+  color: #4caf50;
+}
+
+.delivered {
+  background-color: #e0e0e0;
+  color: #616161;
+}
+
+.orderDetails {
+  padding: 1rem 1.5rem;
+}
+
+.orderDetails p {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.viewButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #e03000;
+  color: white;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.viewButton:hover {
+  background-color: #c52b00;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.2rem;
+  color: #666;
+}

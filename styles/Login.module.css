@@ -1,0 +1,184 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.loginBox {
+  width: 100%;
+  max-width: 480px;
+  padding: 20px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.appName {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #e03000;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6b6b6b;
+  margin-bottom: 30px;
+}
+
+.signupLink {
+  color: #e03000;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.socialButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.googleButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  color: #3c4043;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  transition: background-color 0.3s;
+}
+
+.googleButton:hover {
+  background-color: #f7f8f8;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+.socialIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 25px 0;
+  color: #6b6b6b;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.divider span {
+  padding: 0 10px;
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #f8f8f8;
+}
+
+.passwordHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.forgotPassword {
+  color: #e03000;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.passwordContainer {
+  position: relative;
+}
+
+.showButton {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #e03000;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.roleSelector {
+  margin-bottom: 20px;
+}
+
+.roleSelector select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.signInButton {
+  width: 100%;
+  padding: 15px;
+  background-color: #e03000;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.signInButton:hover {
+  background-color: #c52b00;
+}
